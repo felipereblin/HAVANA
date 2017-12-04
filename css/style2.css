@@ -1,0 +1,396 @@
+body{
+margin:0px;
+}
+
+.rodapeBot{
+    background-color: white;
+    border: 1px solid #BDBDBD;
+    color: gray;
+  
+    height: 37px;
+    width: 185px;
+    float: left;
+    border-radius: 3px;
+    margin-left: 45px;
+}
+
+#rodapeBot2{
+    background-color: white;
+    border: 0px;
+    color: gray;
+    width: 130px;
+    float: left;
+    border-radius: 3px;
+    height: 37px;
+    margin-top: 45px;
+}
+
+#rodapeTexto{
+    color: white;
+    margin-left: 190px;
+    margin-top: 28px;
+	float: left;
+	font-size: 18px;
+}
+
+#rodape1{
+    background: linear-gradient(to right, #077790 , #4a003d);
+    height: 200px;
+    margin-top: 40px;	
+}
+
+.divNews{
+	width: 25%;
+	height: 170px;
+	float: left;
+	padding-top: 25px;
+}
+
+.pNews{
+	margin: 0px;
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+#divCopyright{
+    background-color: white;
+    height: auto;
+    color: gray;
+    min-height: 180px;
+	margin-top: 25px;
+}
+
+.infoHome{
+	margin-top: 35px;
+}
+
+.iconInfoHome{
+	font-size: 48px;
+	color: #175a7c;
+}
+
+h2{
+	font-family: century gothic;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.fotro{
+	background-attachment: fixed;
+	height: 300px;
+	margin-top: 50px;
+	background-size: cover;
+	background-position: 0px 85%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.imgDespacitoCopy{
+    background-image: url(../img/logaoColor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14%;
+    height: 180px;
+    margin-left: 6%;
+}
+
+.pCopyrightDiv{
+	color: #cecece;
+}
+
+.mapSite{
+	border-left: 1px solid #e0e0e0;
+	color: gray;
+	height: 180px;
+	
+}
+
+.mapSite ul{
+	margin-top: 25px;
+    padding-left: 15px;
+	list-style: none;
+}
+
+.mapSite li{
+	margin-bottom: 10px;
+}
+
+.blocoPequeno{
+	background-color: white;
+	box-shadow: 0px 0px 15px #bdbdbd;
+	margin-top:25px;
+	height:200px;
+	overflow: hidden;
+	padding: 0px;
+}
+
+.blocoGrande{
+	height: 425px;
+	background-color: white;
+	box-shadow: 0px 0px 15px #bdbdbd;
+	margin-top:25px;
+	overflow: hidden;
+}
+
+
+.imgBannerPromo{
+	max-width: 100%;
+	height: 100%;
+	transition: all 0.7s;
+}
+
+.blocoGrande:hover img{
+	transform: scale(1.1);
+}
+
+.blocoPequeno:hover img{
+	transform: scale(1.1);
+}
+
+.blocoProdutos{
+	height: 425px;
+	z-index:300;
+	box-shadow: 0px 0px 15px #bdbdbd;
+	margin-top:25px;
+	margin-right: 1%;
+	padding: 0px;
+}
+
+.imgProdBlocoDiv{
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+}
+
+.imgProdStyle{
+    width: 100%;
+    height: 75%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 9px;
+}
+
+.precoInfBlocoDiv{
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    z-index: 200;
+    box-shadow: 0px -1px 19px #cecece;
+}
+
+.carrinhoProdutos{
+	float: right;
+    margin-top: -55px;
+    margin-right: 25px;
+    width: 40%;
+    height: 35%;
+    font-size: 17px;
+    font-family: century gothic;
+    text-transform: uppercase;
+	border: 0;
+}
+
+.tituloProdutos{
+	font-family: century gothic;
+	font-size: 20px;
+	width:70%;
+	float: left;
+	margin-left: 15px;
+	margin-top: 8px;
+}
+
+.precoProdutos{
+	font-family: century gothic;
+	font-size: 35px;
+	color: #175a7c;
+	width:50%;
+	float: left;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-top: -12px;
+}
+
+.precoProdutosDetalhe{
+	font-family: century gothic;
+	font-size: 45px;
+	color: #175a7c;
+	font-weight: bold;
+	margin-top: -10px;
+}
+
+.ouPrecoProdutos{
+	font-family: century gothic;
+	font-size: 12px;
+	margin-left: 15px;
+	margin-top: -15px;
+	float: left;
+	width:50%;
+}
+
+.ouPrecoProdutosDetalhe{
+	font-family: century gothic;
+	font-size: 15px;
+	color: #175a7c;
+	margin-top: -15px;
+}
+
+.carrinhoProdutosDetalhes{
+    margin-right: 25px;
+	margin-top: 25px;
+    width: 100%;
+	height: 7%;
+    font-size: 17px;
+    font-family: century gothic;
+    text-transform: uppercase;
+	border: 0;
+}
+
+.labelDetalhes{
+	font-family: century gothic;
+}
+
+#fotoSabrina{
+	background-image: url(../img/sabrina.jpg);
+	height:350px;
+	width:350px;
+	border-radius: 200px;
+	background-size: 100%;
+	float: left;
+	margin-right: 7%;
+}
+
+#fotoFelipe{
+	background-image: url(../img/felipe.jpg);
+	height:350px;
+	width:350px;
+	border-radius: 200px;
+	background-size: 107%;
+	float: right;
+	margin-left: 7%;
+}
+
+#inverno1{
+	background-image: url(../img/inverno1.png);
+}
+
+#inverno2{
+	background-image: url(../img/inverno2.png);
+}
+
+#inverno3{
+	background-image: url(../img/inverno3.png);
+}
+
+#inverno4{
+	background-image: url(../img/inverno4.png);
+}
+
+#inverno5{
+	background-image: url(../img/inverno5.png);
+}
+
+#inverno6{
+	background-image: url(../img/inverno6.png);
+}
+
+#inverno7{
+	background-image: url(../img/inverno7.png);
+}
+
+#inverno8{
+	background-image: url(../img/inverno8.png);
+}
+
+#inverno9{
+	background-image: url(../img/inverno9.png);
+}
+
+#verao1{
+	background-image: url(../img/verao1.png);
+}
+
+#verao2{
+	background-image: url(../img/verao2.png);
+}
+
+#verao3{
+	background-image: url(../img/verao3.png);
+}
+
+#verao4{
+	background-image: url(../img/verao4.png);
+}
+
+#verao5{
+	background-image: url(../img/verao5.png);
+}
+
+#verao6{
+	background-image: url(../img/verao6.png);
+}
+
+#verao7{
+	background-image: url(../img/verao7.png);
+}
+
+#verao8{
+	background-image: url(../img/verao8.png);
+}
+
+#verao9{
+	background-image: url(../img/verao9.png);
+}
+
+#imgProd1{
+	background-image: url(../img/prod1.jpg);
+}
+
+#colecaoVerao{
+	background-image: url(../img/colecaoVerao.jpg);
+}
+
+#colecaoInverno{
+	background-image: url(../img/colecaoInverno.jpg);
+}
+
+#contato{
+	background-image: url(../img/contato.jpg);
+}
+
+#sobreNos{
+	background-image: url(../img/sobreNos.jpg);
+}
+
+#contact{
+    
+  padding-top: 60px;
+  width: 100%;
+  height: 400px;
+}
+.contact-section{
+  padding-top: 40px;
+}
+.contact-section .col-md-6{
+  width: 50%;
+}
+
+.form-line{
+  border-right: 1px solid #dadada;
+}
+
+textarea.form-control {
+    height: 135px;
+}
+
+.submit{
+  font-size: 1.1em;
+  float: right;
+  width: 150px;
+  background-color: #175a7c;
+  color: #fff;
+}
