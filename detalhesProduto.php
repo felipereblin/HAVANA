@@ -6,25 +6,23 @@
 	
 
 	if(isset($_GET['nome']) && $_GET['nome'] != ''){
-		$contato = array();
-		$contato['nome'] = $_GET['nome'];
+		$comentario = array();
+		$comentario['nome'] = $_GET['nome'];
 		
 		if(isset($_GET['email'])){
-				$contato['email'] = $_GET['email'];
+				$comentario['email'] = $_GET['email'];
 		}
-		if(isset($_GET['telefone'])){
-				$contato['telefone'] = $_GET['telefone'];
+		if(isset($_GET['comentario'])){
+				$comentario['comentario'] = $_GET['comentario'];
 		}
-		if(isset($_GET['mensagem'])){
-				$contato['mensagem'] = $_GET['mensagem'];
-		}
-		
-		//gravar_contato($conexao, $contato);		
+                
+		gravar_comentario($conexao, $comentario);		
 	}
 
 	
 	
-	//$lista_contato = buscar_contato($conexao);
+	$lista_comentario = buscar_comentario($conexao);
+        
 	
-	include "detalhesProduto.php";
+	include "detalhesProduto2.php";
 ?>
