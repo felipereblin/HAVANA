@@ -1,32 +1,35 @@
 <?php
 
-include "banco.php";
+require_once "banco.php";
 
-if (isset($_GET['nome']) && $_GET['nome'] != '') {
+if (isset($_POST['id']) && $_POST['id'] != '') {
     $comentario = array();
 
-    $comentario['id'] = $_GET['id'];
+    $comentario['id'] = $_POST['id'];
 
-    $comentario['nome'] = $_GET['nome'];
+    $comentario['nome'] = $_POST['nome'];
 
-    if (isset($_GET['email']) && $_GET['email'] != '') {
-        $comentario['email'] = $_GET['email'];
+    if (isset($_POST['email']) && $_POST['email'] != '') {
+        $comentario['email'] = $_POST['email'];
     } else {
         $comentario['email'] = '';
     }
 
-    if (isset($_GET['comentario']) && $_GET['comentario'] != '') {
-        $comentario['comentario'] = $_GET['comentario'];
+    if (isset($_POST['comentario']) && $_POST['comentario'] != '') {
+        $comentario['comentario'] = $_POST['comentario'];
     } else {
         $comentario['comentario'] = '';
     }
-    
-    buscar_comentario_byID($conexao, $id);  
+ //   $comentario_edit = buscar_comentario_byID($conexao, $_POST['id']);  
+      
+    //buscar_comentario_byID($conexao, $comentario['id']);  
     editar_comentario($conexao, $comentario);
-    header('Location: detalhesProduto.php');
-    die();
+    
+    //header('Location: detalhesProduto.php');
+    //die();
+    //$comentario_edit = ['nome'=>'','email'=>'','comentario'=>'','id'=>''];
 }
-
-$comentario = buscar_comentario($conexao);
-
+else {
+    $comentario_edit = buscar_comentario_byID($conexao, $_GET['id']);  
+}
 include "detalhesProduto.php";

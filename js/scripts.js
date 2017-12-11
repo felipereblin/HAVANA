@@ -8,3 +8,14 @@ $('#quantity').on('blur', function(){
         $('p.precoProdutosDetalhe').text("R$" + price);
     }
 });
+
+$('#form').on('submit', function(){
+	if(($('#nome')=='' || $('#email')=='' || $('#comentario')=='')){
+		alert("Você deve preecher todos os campos!");
+	}
+
+});
+
+$('.carrinhoProdutosDetalhes').on('click', function(){
+	$('.carrinhoProdutosDetalhes').text('Produto adicionado ao carrinho!').addClass('disabled');
+})

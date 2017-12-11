@@ -88,7 +88,7 @@ function editar_comentario($conexao, $comentario)
         UPDATE comentario SET
             nome = '{$comentario['nome']}',
             email = '{$comentario['email']}',
-            comentario = {$comentario['comentario']}
+            comentario = '{$comentario['comentario']}'
         WHERE id = {$comentario['id']}
     ";
     mysqli_query($conexao, $sqlEditar);

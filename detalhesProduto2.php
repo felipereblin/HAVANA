@@ -155,24 +155,25 @@
                 </div>
                 <div class="col-md-12" style="margin-top: 25px;">
                     <h3 class="labelDetalhes">Comentários</h3>
-                    <p>Nenhum comentário sobre o produto. Seja o primeiro a comentar. </p>
-                    <form>
+                    <form id="form" action="editar.php" method="POST">
+                        <input type="hidden" name="id" value="<?php echo $comentario_edit['id'] ?>">
+                        
                         <div class="form-group">
                             <label for="exampleInputUsername">Usuário</label>
-                            <input type="text" class="form-control" name="nome" placeholder=" Digite seu nome">
+                            <input type="text" class="form-control" name="nome" id="nome" value="<?php echo $comentario_edit['nome'] ?>" placeholder=" Digite seu nome">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputUsername">E-mail</label>
-                            <input type="email" class="form-control" name="email" placeholder=" Digite seu e-mail">
+                            <input type="email" class="form-control" name="email" id="email" value="<?php echo $comentario_edit['email'] ?>" placeholder=" Digite seu e-mail">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputUsername">Comentário</label>
-                            <input type="text" class="form-control" name="comentario" placeholder=" Digite seu comentário">
+                            <input type="text" class="form-control" name="comentario" id="comentario" value="<?php echo $comentario_edit['comentario'] ?>" placeholder=" Digite seu comentário">
                         </div>
-                        <button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Enviar</button>
+                        <button type="submit" class="btn btn-default submit" id="sendComent"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Enviar</button>
                     </form>
                 </div>
-
+                                
                 <div class="col-md-12">
                     <hr />
                     <h3 class="labelDetalhes">Comentários recentes</h3>

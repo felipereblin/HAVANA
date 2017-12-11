@@ -1,7 +1,7 @@
 ﻿<?php 
 	//session_start(); 
 	
-	include "banco.php";
+	require_once "banco.php";
 	//include "ajudantes.php";
 	
 
@@ -19,10 +19,9 @@
 		gravar_comentario($conexao, $comentario);		
 	}
 
-	
+	$comentario_edit = $comentario_edit ? $comentario_edit : ['nome'=>'','email'=>'','comentario'=>'','id'=>''];
 	
 	$lista_comentario = buscar_comentario($conexao);
         
-	
 	include "detalhesProduto2.php";
 ?>
