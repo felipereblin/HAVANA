@@ -264,6 +264,16 @@ h2{
 	margin-right: 7%;
 }
 
+#fotoLarissa{
+	background-image: url(../img/larissa.jpg);
+	height:350px;
+	width:350px;
+	border-radius: 200px;
+	background-size: 100%;
+	float: left;
+	margin-right: 7%;
+}
+
 #fotoFelipe{
 	background-image: url(../img/felipe.jpg);
 	height:350px;

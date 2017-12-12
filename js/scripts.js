@@ -13,7 +13,6 @@ $('#form').on('submit', function(){
 	if(($('#nome')=='' || $('#email')=='' || $('#comentario')=='')){
 		alert("Você deve preecher todos os campos!");
 	}
-
 });
 
 $('.carrinhoProdutosDetalhes').on('click', function(){

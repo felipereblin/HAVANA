@@ -155,11 +155,14 @@
                 </div>
                 <div class="col-md-12" style="margin-top: 25px;">
                     <h3 class="labelDetalhes">Comentários</h3>
-                    <form id="form" action="editar.php" method="POST">
+                    <form id="form" method="POST">
                         <input type="hidden" name="id" value="<?php echo $comentario_edit['id'] ?>">
                         
                         <div class="form-group">
                             <label for="exampleInputUsername">Usuário</label>
+                            <?php if(!isset($comentario_edit['nome'])){$comentario_edit['nome'] = '';} ?>
+                            <?php if(!isset($comentario_edit['email'])){$comentario_edit['email'] = '';} ?>
+                            <?php if(!isset($comentario_edit['comentario'])){$comentario_edit['comentario'] = '';} ?>
                             <input type="text" class="form-control" name="nome" id="nome" value="<?php echo $comentario_edit['nome'] ?>" placeholder=" Digite seu nome">
                         </div>
                         <div class="form-group">
@@ -184,6 +187,8 @@
                                     <th>Nome</th>
                                     <th>E-mail</th>
                                     <th>Comentário</th>
+                                    <th>Editar</th>
+                                    <th>Remover</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -217,7 +222,7 @@
                             <a href="colecaoVerao.html" style="text-decoration: none; color: gray;"><li>COLEÇÃO VERÃO</li>
                                 <a href="colecaoInverno.html" style="text-decoration: none; color: gray;"><li>COLEÇÃO INVERNO</li>
                                     <a href="sobreNos.html" style="text-decoration: none; color: gray;"><li>SOBRE NÓS</li>
-                                        <a href="contato.html" style="text-decoration: none; color: gray;"><li>CONTATO</li>
+                                        <a href="contato.php" style="text-decoration: none; color: gray;"><li>CONTATO</li>
                                             </ul>
                                             </div>
                                             <div class="col-md-12 pCopyrightDiv">	

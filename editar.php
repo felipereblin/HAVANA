@@ -20,14 +20,9 @@ if (isset($_POST['id']) && $_POST['id'] != '') {
     } else {
         $comentario['comentario'] = '';
     }
- //   $comentario_edit = buscar_comentario_byID($conexao, $_POST['id']);  
-      
-    //buscar_comentario_byID($conexao, $comentario['id']);  
+ 
     editar_comentario($conexao, $comentario);
-    
-    //header('Location: detalhesProduto.php');
-    //die();
-    //$comentario_edit = ['nome'=>'','email'=>'','comentario'=>'','id'=>''];
+    $_SESSION['wasEdited'] = '1';
 }
 else {
     $comentario_edit = buscar_comentario_byID($conexao, $_GET['id']);  

@@ -25,7 +25,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Coleção Inverno</a></li>
+                                <li><a href="colecaoInverno.html">Coleção Inverno</a></li>
                                 <li><a href="colecaoVerao.html">Coleção Verão</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li class="dropdown-header">Coleção Inverno</li>
@@ -133,7 +133,7 @@
                                <a href="colecaoVerao.html" style="text-decoration: none; color: gray;"><li>COLEÇÃO VERÃO</li>
                                <a href="colecaoInverno.html" style="text-decoration: none; color: gray;"><li>COLEÇÃO INVERNO</li>
                                <a href="sobreNos.html" style="text-decoration: none; color: gray;"><li>SOBRE NÓS</li>
-                               <a href="contato.html" style="text-decoration: none; color: gray;"><li>CONTATO</li>
+                               <a href="contato.php" style="text-decoration: none; color: gray;"><li>CONTATO</li>
                        </ul>
                </div>
                <div class="col-md-12 pCopyrightDiv">	

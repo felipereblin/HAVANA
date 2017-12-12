@@ -5,22 +5,30 @@
 	//include "ajudantes.php";
 	
 
-	if(isset($_GET['nome']) && $_GET['nome'] != ''){
+       // $comentario_edit = $comentario_edit ? $comentario_edit :['nome'=>'','email'=>'','comentario'=>'','id'=>''];
+	if(isset($_POST['nome']) && $_POST['nome'] != ''){
+            if($_SESSION['wasEdited'] != '1'){
 		$comentario = array();
-		$comentario['nome'] = $_GET['nome'];
+		$comentario['nome'] = $_POST['nome'];
 		
-		if(isset($_GET['email'])){
-				$comentario['email'] = $_GET['email'];
+		if(isset($_POST['email'])){
+				$comentario['email'] = $_POST['email'];
 		}
-		if(isset($_GET['comentario'])){
-				$comentario['comentario'] = $_GET['comentario'];
+		if(isset($_POST['comentario'])){
+				$comentario['comentario'] = $_POST['comentario'];
 		}
                 
-		gravar_comentario($conexao, $comentario);		
-	}
-
-	$comentario_edit = $comentario_edit ? $comentario_edit : ['nome'=>'','email'=>'','comentario'=>'','id'=>''];
-	
+		gravar_comentario($conexao, $comentario);
+            }
+        }
+        
+        if(!isset($comentario_edit)){
+            $comentario_edit['id'] = '';
+            $comentario_edit['nome'] = '';
+            $comentario_edit['email'] = '';
+            $comentario_edit['comentario'] = '';
+        }
+        	
 	$lista_comentario = buscar_comentario($conexao);
         
 	include "detalhesProduto2.php";
